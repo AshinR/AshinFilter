@@ -12,9 +12,9 @@ def is_enabled(value, default):
 
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
-API_ID = int(environ.get('API_ID', '20389440'))
-API_HASH = environ.get('API_HASH', 'a1a06a18eb9153e9dbd447cfd5da2457')
-BOT_TOKEN = environ.get('BOT_TOKEN', "6564513574:AAH3Y97iqQjSlV5vKKZdGDUohlhpA-LeSbw")
+API_ID = int(environ.get('API_ID', '31916679'))
+API_HASH = environ.get('API_HASH', '009622ceeb9104d97ac6552e8223100a')
+BOT_TOKEN = environ.get('BOT_TOKEN', "8263254847:AAHYNRVkXywwv6-YK6p8pJDBKyy9v2-y6C4")
 PORT = int(environ.get('PORT', '8080'))
 
 # Bot settings
@@ -39,12 +39,12 @@ COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 auth_channel = environ.get('AUTH_CHANNEL', '')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
 # Set to False inside the bracket if you don't want to use Request Channel else set it to Channel ID
-REQ_CHANNEL = environ.get("REQ_CHANNEL", '-1001935365147')
+REQ_CHANNEL = environ.get("REQ_CHANNEL", '-1003467864944')
 REQ_CHANNEL = int(REQ_CHANNEL) if REQ_CHANNEL and id_pattern.search(REQ_CHANNEL) else False
 JOIN_REQS_DB = environ.get("JOIN_REQS_DB", DATABASE_URI)
 
 # Others
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001623633000'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1003677443559'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'VJ_Bot_Disscussion')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), False)
 IMDB = is_enabled((environ.get('IMDB', "False")), True)
